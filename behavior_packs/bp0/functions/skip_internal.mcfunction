@@ -20,17 +20,15 @@ execute if score .act2 global matches 3 if score .seq global matches 1..999 run 
 execute if score .act global matches 101 if score .seq global matches 1..659 run scoreboard players set .seq global 650
 execute if score .act global matches 101 if score .seq global matches 1..659 run tellraw @a {"rawtext":[{"text":"§6Orb Ambush 컷신을 스킵했습니다. 카운트다운이 시작됩니다."}]}
 
-## Act 2 - Craft Off Cutscenes (카운트다운 직전으로 - 임시)
-execute if score .act global matches 200 if score .seq global matches 1..1099 run scoreboard players set .seq global 1100
+## Act 2 - Craft Off Cutscenes (카운트다운 직전으로)
+execute if score .act global matches 200 if score .seq global matches 1..1099 run scoreboard players set .seq global 1030
 execute if score .act global matches 200 if score .seq global matches 1..1099 run tellraw @a {"rawtext":[{"text":"§6Craft Off 인트로를 스킵했습니다. 카운트다운이 시작됩니다."}]}
 
-execute if score .act global matches 201 if score .seq global matches 1..1099 run scoreboard players set .seq global 1100
+execute if score .act global matches 201 if score .seq global matches 1..1099 run scoreboard players set .seq global 1030
 execute if score .act global matches 201 if score .seq global matches 1..1099 run tellraw @a {"rawtext":[{"text":"§6Craft Off 라운드 1을 스킵했습니다. 카운트다운이 시작됩니다."}]}
 
-execute if score .act global matches 202 if score .seq global matches 1..2099 run scoreboard players set .seq global 2100
+execute if score .act global matches 202 if score .seq global matches 1..2099 run scoreboard players set .seq global 1700
 execute if score .act global matches 202 if score .seq global matches 1..2099 run tellraw @a {"rawtext":[{"text":"§6Craft Off 라운드 2를 스킵했습니다. 카운트다운이 시작됩니다."}]}
-execute if score .act global matches 202 if score .seq global matches 2100 run function utility/games/craft/respawn_assets
-execute if score .act global matches 202 if score .seq global matches 2100 run function tagging/crafting_grid
 
 ## Act 3 - Grid Wars Cutscene (카운트다운 직전으로)
 execute if score .act global matches 301 if score .seq global matches 1..1099 run scoreboard players set .seq global 1090
